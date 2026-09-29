@@ -1,8 +1,8 @@
 
 
-const { test, expect } = require("../utils/login.js");
+const { test, expect } = require("../../utils/login.js");
 
-import { Categories } from "../Pageobject/Categories.js";
+import { Categories } from "../../Pageobject/Categories.js";
 
 
 test.describe.configure({ mode: "serial" });
