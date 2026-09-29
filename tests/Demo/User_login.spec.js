@@ -1,6 +1,6 @@
 
 
-const { test, expect } = require("../utils/login.js");
+const { test, expect } = require("../../utils/login.js");
 
 
 // group tests related to user login functionality

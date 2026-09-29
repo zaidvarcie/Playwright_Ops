@@ -3,9 +3,9 @@
 
 const { test, expect } = require('@playwright/test');
 
-import { randomEmail } from '../utils/email.js';
+import { randomEmail } from '../../utils/email.js';
 
-const Register = require('../Pageobject/Register');
+const Register = require('../../Pageobject/Register.js');
 
 // Generate a random email address for registration
 

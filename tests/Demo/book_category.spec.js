@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-const { Books } = require("../Pageobject/Books");
+const { Books } = require("../../Pageobject/Books");
 
 test.describe("Books Module", () => {
 
