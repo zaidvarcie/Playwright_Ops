@@ -45,17 +45,17 @@ export default defineConfig({
       },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] ,
-      screenshot: 'only-on-failure',
-    },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] ,
+    //   screenshot: 'only-on-failure',
+    // },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {

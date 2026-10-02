@@ -85,4 +85,14 @@ test.describe("Books Module", () => {
         await books.selectViewMode("List");
     });
 
+    // New Test case is added to verify the book category filter functionality
+    test("Filter by Book Category", async ({ page }) => {
+
+        const books = new Books(page); 
+        await books.goto();
+
+        await books.selectBookCategory("Computing and Internet");
+    }) 
+
+
 });
