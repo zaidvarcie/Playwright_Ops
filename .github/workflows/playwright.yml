@@ -35,7 +35,7 @@ jobs:
         env:
           PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
         run: |
-          npx playwright test tests/Superone/login_api.spec.js  --config=playwright.service.config.mjs --workers=1
+          npx playwright test tests/Demo/book_category.spec.js --config=playwright.service.config.mjs --workers=1
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
