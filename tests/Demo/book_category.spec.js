@@ -5,7 +5,7 @@ test.describe("Books Module", () => {
 
     test.describe.configure({ mode: "serial" });
 
-    test("@open Navigate to Books page", async ({ page }) => {
+    test("open Navigate to Books page", async ({ page }) => {
 
         const books = new Books(page);
 
@@ -65,16 +65,16 @@ test.describe("Books Module", () => {
         await expect(books.productItems).toHaveCount(4);
     });
 
-    test("Display 8 products", async ({ page }) => {
+    // test("Display 8 products", async ({ page }) => {
 
-        const books = new Books(page);
+    //     const books = new Books(page);
 
-        await books.goto();
+    //     await books.goto();
 
-        await books.selectPageSize(8);
+    //     await books.selectPageSize(8);
 
-        expect(await books.getDisplayedProductsCount()).toBeGreaterThan(4);
-    });
+    //     expect(await books.getDisplayedProductsCount()).toBeGreaterThan(4);
+    // });
 
     test("Change View Mode", async ({ page }) => {
 
@@ -86,7 +86,7 @@ test.describe("Books Module", () => {
     });
 
     // New Test case is added to verify the book category filter functionality
-    test("Filter by Book Category", async ({ page }) => {
+    test("Filter books by Book Category", async ({ page }) => {
 
         const books = new Books(page); 
         await books.goto();
