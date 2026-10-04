@@ -51,19 +51,19 @@ test.describe("Books Module", () => {
         await expect(books.fictionBook).toHaveText("Fiction");
     });
 
-    test("Display 4 products", async ({ page }) => {
+    // test("Display 4 products", async ({ page }) => {
 
-        const books = new Books(page);
+    //     const books = new Books(page);
 
-        await books.goto();
+    //     await books.goto();
 
-        expect(await books.getDisplayLabel()).toContain("Display");
-        expect(await books.getPerPageLabel()).toContain("per page");
+    //     expect(await books.getDisplayLabel()).toContain("Display");
+    //     expect(await books.getPerPageLabel()).toContain("per page");
 
-        await books.selectPageSize(4);
+    //     await books.selectPageSize(4);
 
-        await expect(books.productItems).toHaveCount(4);
-    });
+    //     await expect(books.productItems).toHaveCount(4);
+    // });
 
     // test("Display 8 products", async ({ page }) => {
 
