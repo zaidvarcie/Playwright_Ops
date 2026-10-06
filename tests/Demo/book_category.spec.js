@@ -65,25 +65,25 @@ test.describe("Books Module", () => {
     //     await expect(books.productItems).toHaveCount(4);
     // });
 
-    // test("Display 8 products", async ({ page }) => {
-
-    //     const books = new Books(page);
-
-    //     await books.goto();
-
-    //     await books.selectPageSize(8);
-
-    //     expect(await books.getDisplayedProductsCount()).toBeGreaterThan(4);
-    // });
-
-    test("Change View Mode", async ({ page }) => {
+    test("Display 8 products", async ({ page }) => {
 
         const books = new Books(page);
 
         await books.goto();
 
-        await books.selectViewMode("List");
+        await books.selectPageSize(8);
+
+        expect.soft(await books.getDisplayedProductsCount()).toBeGreaterThan(4);
     });
+
+    // test("Change View Mode", async ({ page }) => {
+
+    //     const books = new Books(page);
+
+    //     await books.goto();
+
+    //     await books.selectViewMode("List");
+    // });
 
     // New Test case is added to verify the book category filter functionality
     test("Filter books by Book Category", async ({ page }) => {
